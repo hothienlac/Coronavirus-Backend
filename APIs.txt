@@ -1,0 +1,52 @@
+// API1
+{
+    cases: number,
+    deaths: number,
+    recovered: number,
+    death_rate: number,
+    recovered_rate: number
+}
+Note:
+Cái này chỉ gửi 1 json object thôi.
+For death_rate and recovered_rate: Tính luôn, làm tròn còn 2 chữ số thập phân.
+
+// API2
+  {
+    "cases": number,
+    "country": string,
+    "deaths": number,
+    "lat": number,
+    "lon": number,
+    "recovered": number
+  },
+Notes:
+Cái này gửi 1 cái array của các json object
+Các lat với lon hôm bữa t có gửi cái file cho mày á. Mà mày pải kiếm hết các nước còn lại.
+Tại dữ liệu mình update liên tục mà, nếu có nước mới bị bệnh thì mày phải có tọa độ của nó.
+....(Nói chung cái tọa độ thì tùy mày xử lí, làm sao nó đúng, với lại khi có nước mới vào là
+ có tọa độ là được). Hay mày lấy của nó có sẵn cũng đc, nhưng lấy 1 cái thôi. Tại 1 nước nó 
+ có nhiều chỗ, nhiều tọa độ, chọn đại 1 cái.
+
+// API3
+  {
+    "active": 361738,
+    "cases": 396223,
+    "country": "US",
+    "death_rate": 3.21,
+    "deaths": 12722,
+    "flag": "assets/flags/US.png",
+    "rank": 1,
+    "recovered": 21763,
+    "recovered_rate": 5.49
+    "days": 70
+  }
+Notes:
+Ghi example luôn cho dễ
+Gửi array
+Cái flag: 'assets/flags/' + country + '.png'
+Cái này nhớ sort theo cases, để lấy rank á.
+Cái days là số ngày nước đó bị dịch, tính từ ca nhiễm đầu tiên đến hiện tại.
+
+// API4
+
+
